@@ -1,0 +1,476 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+:root{
+    --ftsize:1.37rem;
+}
+
+/* HEADER */
+
+/* Header background image */
+.head::before{
+    content: "";
+    background: url("../imageFile/backgroundImg/books-gd56477be0_1920.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+.head{
+    height: 450px;
+    width: 100%;
+}
+
+/* Navigation bar */
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    z-index: -1;
+    opacity: 0.55;
+    
+}
+.navbar{
+height: 70px;
+}
+.unolist1{
+    margin: 1rem 0rem;
+}
+.listholder{
+    list-style: none;
+    display: inline-block;
+    margin: 0.5rem 0rem;
+}
+nav .unolist1 li a{
+    color: white;
+    font-size: var(--ftsize);
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    margin: 0px 10px;
+}
+
+.hamberger #hamb{
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.hamberger #hamb li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+}
+.hamberger #hamb li a{
+    text-decoration: none;
+    color: white;
+
+}
+.hamberger #cross{
+    text-align: right;
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    right: 5px;
+}
+#hamb{
+    background-color: #3f3e3e;;
+}
+
+.hamberger h1{
+    display: none;
+}
+.unolist1 .listholder a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 9px;
+}
+
+.unolist2 .listholder{
+    margin: 1.5rem 0rem;
+    font-size: 1.7rem;
+    
+}
+.unolist2 .listholder a{
+    font-size: 1.95rem;
+    border-radius: 60%;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 0.55rem;
+    color: white;
+}
+#hamb .listholder a:hover{
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+}
+.unolist2 .listholder a:hover{
+    box-shadow: 0px 0px 5px 2px white;
+}
+.head h1{
+    color: white;
+    font-size: 2.5rem;
+    margin: 4rem 1rem 1rem 1rem;
+    font-family: sans-serif;
+    text-shadow: 2.5px 2.5px grey;
+}
+
+
+@media (max-width:735px){
+    .unolist1{
+        display: none;
+    }
+    .hamberger h1{
+        display: block;
+        position: relative;
+        text-align: right;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .hamberger h1 a{
+        color: white;
+        text-decoration: none;
+    }
+    #hamb:target{
+        width: 10rem;
+        height: 13rem;
+        
+    }
+    .head .myname {
+        margin:2rem 2rem 1rem 1rem;
+    }
+    .unolist2 .listholder{
+        margin: 1.0rem 0rem;
+        font-size: 1.7rem;
+        
+    }
+}
+
+
+/* About */
+
+#about img{
+    display: inline-block;
+    width: 8rem;
+    height: 10.5rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -106px;
+    border: 5px solid white;
+    box-shadow: 3.5px 3.5px 2px grey;
+}
+#about p{
+    margin: 2px 100px;
+    font-size: 1.15rem;
+    font-family: sans-serif;
+}
+#about p a{
+    text-decoration: none;
+    color: rgb(4, 4, 215);
+    font-weight: 550;
+}
+
+/* skills */
+
+#skills{
+    width: 100%;
+    background-color: #f1dfdf;
+    margin: 4.5rem 0px; 
+    padding: 20px 0px;
+}
+
+#skills h1{
+    font-size: 2.2rem;
+    margin: 10px 10px;
+    margin-top: 20px;
+}
+.holder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+.container{
+    width: 270px;
+    height: 50px;
+    border: 2.2px solid black;
+    margin: 2rem 1rem;
+    border-radius: 20px ;
+    overflow: hidden;
+}
+#html .inner1{
+    background-color: rebeccapurple;
+    color: white;
+    width: 85%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#css .inner2{
+    background-color: rgb(213, 6, 6);
+    color: white;
+    width: 80%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#javascript .inner3{
+    background-color: rgb(138, 84, 3);
+    color: white;
+    width: 70%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    
+}
+#react .inner4{
+    background-color: rgb(2, 113, 19);
+    color: white;
+    width: 80%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#node .inner5{
+    background-color: rgb(177, 197, 3);
+    color: white;
+    width: 70%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#mongo .inner6{
+    background-color: rgb(150, 28, 7);
+    color: white;
+    width: 65%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#express .inner7{
+    background-color: rgb(4, 71, 159);
+    color: white;
+    width: 70%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#c .inner8{
+    background-color: rgb(118, 4, 78);
+    color: white;
+    width: 70%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#cpp .inner9{
+    background-color: rgb(3, 74, 119);
+    color: white;
+    width: 85%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#java .inner10{
+    background-color: rgb(116, 16, 19);
+    color: white;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+#dsa .inner11{
+    background-color: rgb(25, 13, 114);
+    color: white;
+    width: 85%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+/* Education */
+
+#education h2{
+    font-size: 2.2rem;
+    margin: 10px 10px;
+    margin-top: -25px;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.education{
+    width: 75vw;
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+}
+.edu{
+    width: 40%;
+    margin: 5px;
+    position: relative;
+}
+.edu h3{
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-decoration: underline;
+    color: rgb(2, 2, 173);
+}
+h4{
+    color: rgb(225, 86, 5);
+
+}
+.edu p{
+    font-size: 1.05rem;
+    padding: 5px 15px;
+    font-family: sans-serif;
+}
+.left1{
+   left: 4%;
+   margin-top:-33px ;
+}
+.right1{
+    left: 55%;
+}
+.left2{
+    left: 4%;
+
+}
+.divider{
+    height: 100%;
+    width: 0%;
+    border: 3px dotted rgb(4, 4, 87);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+#education .plane{
+    font-size:2rem;
+    transform: rotate(90deg);
+    position: sticky;
+    top: 20%;
+    left: -20px;
+    margin-left: -18px;
+
+} 
+
+.divider .station{
+    border: 2px solid rgb(6, 6, 177);
+    width: 20px;
+    height: 20px;
+    background-color:rgb(111, 57, 3);
+    position: relative;
+    border-radius: 50%;
+    z-index: -1;
+    margin-left: -9.5px;
+}
+.station1{
+    top: 0%;
+}
+.station2{
+    top: 29%;
+}
+.station3{
+    top: 60%;
+}
+@media (max-width:690px) {
+    .divider{
+      position: absolute;   
+      left: 2%;
+    }
+    .edu{
+        left: 15%;
+        width: 80%;
+        margin-top: 16px ;
+    }
+    #about p{
+        margin: 2px 17px;
+    }
+     .plane{
+        position: sticky;
+        left: 1px;
+        
+    }
+    .ou{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav ul li a{
+        padding: 0.5rem 0.2rem;
+    }
+}
+
+
+/* Contact */
+
+#contact{
+    margin-top: 4.5rem;
+    padding-bottom: 3rem;
+    border: 3px solid black;
+    color: white;
+    background: linear-gradient(45deg, rgb(61, 12, 222),rgb(21, 1, 99) 500px);
+    height: auto;
+}
+#contact h1{
+    margin-top: 2.3rem;
+}
+#contact .ou{
+    display: flex;
+    margin-top: 3rem;
+}
+#contact .ou input{
+    color:white;
+    /* background-color: rgb(10, 10, 188); */
+    border-width: 0px 0px 2px 0px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.getintouch {
+    width: 70%;
+    margin: 10px 50px;
+    
+}
+.getintouch h2{
+    text-align: left ;
+}
+.getintouch  p{
+    text-align: left;
+}
+.getintouch li{
+    list-style: none;
+    margin: 10px;
+    text-align: left;
+}
+form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px;
+}
+button:hover{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+.copy{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    height: 35px;
+}
